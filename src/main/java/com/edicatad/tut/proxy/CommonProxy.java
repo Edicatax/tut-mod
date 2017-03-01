@@ -1,22 +1,19 @@
 package com.edicatad.tut.proxy;
 
+import com.edicatad.tut.handlers.ItemHandler;
+
 public class CommonProxy implements IProxy{
 
-	@Override
 	public void preInit() {
-		// TODO Auto-generated method stub
-		
+		ItemHandler.init();
+		ItemHandler.register();
 	}
 
-	@Override
 	public void init() {
-		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void postInit() {
-		// TODO Auto-generated method stub
 		
 	}
 	
