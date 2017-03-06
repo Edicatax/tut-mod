@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "tut/tut_block" }
+        "normal": { "model": "tut:tut_block" }
     }
 }

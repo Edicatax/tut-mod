@@ -23,10 +23,11 @@ public class BlockHandler {
 	
 	public static void register(){
 		GameRegistry.register(tutBlock);
+		GameRegistry.register(ibTutBlock, tutBlock.getRegistryName());
 	}
 	
 	public static void registerRenders(){
-		
+		registerRender(tutBlock);
 	}
 	
 	public static void registerRender(Block block){
