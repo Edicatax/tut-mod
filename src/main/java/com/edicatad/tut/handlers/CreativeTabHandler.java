@@ -17,19 +17,17 @@ public class CreativeTabHandler {
 		}
 	};
 	
-	/*
 	public static CreativeTabs tabTools = new CreativeTabs("tut_tools"){
 		public ItemStack getTabIconItem(){
-			return null;
+			return new ItemStack(ItemHandler.tutAxe);
 		}
 	};
 
-	public static CreativeTabs tabWeapons = new CreativeTabs("tut_weapons"){
+	public static CreativeTabs tabCombat = new CreativeTabs("tut_combat"){
 		public ItemStack getTabIconItem(){
-			return null;
+			return new ItemStack(ItemHandler.tutSword);
 		}
 	};
-	*/
 	
 	public static void init(){
 		
