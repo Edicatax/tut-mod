@@ -12,7 +12,7 @@ public class ItemHandler {
 	public static Item tutItem;
 	
 	public static void init(){
-		tutItem = new ItemTutItem("tut_item", CreativeTabs.MATERIALS);
+		tutItem = new ItemTutItem("tut_item", CreativeTabHandler.tabItems);
 	}
 	
 	public static void register(){

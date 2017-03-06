@@ -6,7 +6,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -16,7 +15,7 @@ public class BlockHandler {
 	public static ItemBlock ibTutBlock;
 	
 	public static void init(){
-		tutBlock = new BlockTutBlock(Material.ROCK, "tut_block", CreativeTabs.BUILDING_BLOCKS, 5F, 15F, 3, "pickaxe");
+		tutBlock = new BlockTutBlock(Material.ROCK, "tut_block", CreativeTabHandler.tabBlocks, 5F, 15F, 3, "pickaxe");
 		  
 		ibTutBlock = (ItemBlock) new ItemBlock(tutBlock);
 	}
