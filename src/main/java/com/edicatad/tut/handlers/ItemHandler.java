@@ -32,10 +32,20 @@ public class ItemHandler {
 	
 	public static void register(){
 		GameRegistry.register(tutItem);
+		GameRegistry.register(tutAxe);
+		GameRegistry.register(tutHoe);
+		GameRegistry.register(tutPickaxe);
+		GameRegistry.register(tutSpade);
+		GameRegistry.register(tutSword);
 	}
 	
 	public static void registerRenders(){
 		registerRender(tutItem);
+		registerRender(tutAxe);
+		registerRender(tutHoe);
+		registerRender(tutPickaxe);
+		registerRender(tutSpade);
+		registerRender(tutSword);
 	}
 	
 	public static void registerRender(Item item){
