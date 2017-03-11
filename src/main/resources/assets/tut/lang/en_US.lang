@@ -1,4 +1,11 @@
 tile.tut_block.name=Tutorial Ore
 item.tut_item.name=Tutorial Item
+item.tut_axe.name=Tutorial Axe
+item.tut_hoe.name=Tutorial Hoe
+item.tut_pickaxe.name=Tutorial Pickaxe
+item.tut_shovel.name=Tutorial Shovel
+item.tut_sword.name=Tutorial Sword
+itemGroup.tut_combat=Mod Combat
+itemGroup.tut_tools=Mod Tools
 itemGroup.tut_blocks=Mod Blocks
 itemGroup.tut_items=Mod Items

@@ -26,7 +26,7 @@ public class ItemHandler {
 		tutAxe = new ItemTutAxe("tut_axe", MaterialHandler.TUTORIAL, CreativeTabHandler.tabTools);
 		tutHoe = new ItemTutHoe("tut_hoe", MaterialHandler.TUTORIAL, CreativeTabHandler.tabTools);
 		tutPickaxe = new ItemTutPickaxe("tut_pickaxe", MaterialHandler.TUTORIAL, CreativeTabHandler.tabTools);
-		tutSpade = new ItemTutSpade("tut_spade", MaterialHandler.TUTORIAL, CreativeTabHandler.tabTools);
+		tutSpade = new ItemTutSpade("tut_shovel", MaterialHandler.TUTORIAL, CreativeTabHandler.tabTools);
 		tutSword = new ItemTutSword("tut_sword", MaterialHandler.TUTORIAL, CreativeTabHandler.tabCombat);
 	}
 	
