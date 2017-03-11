@@ -15,12 +15,21 @@ public class BlockHandler {
 	public static ItemBlock ibTutBlock;
 	
 	public static void init(){
+		/* This creates a new block with the following properties:
+		 * The material acts like ROCK, solid, non-hurting, no dimension warping, etc
+		 * 5F is the mining resistance, 5F means it takes a decent amount of time to mine
+		 * 15F is the explosion resistance
+		 * 3 is the harvest level:  diamond
+		 * "pickaxe" means that the correct tool for handling this is a pickaxe
+		 */
 		tutBlock = new BlockTutBlock(Material.ROCK, "tut_block", CreativeTabHandler.tabBlocks, 5F, 15F, 3, "pickaxe");
 		  
 		ibTutBlock = (ItemBlock) new ItemBlock(tutBlock);
 	}
 	
 	public static void register(){
+		// In order for the renderer to properly render things both the inventory item and
+		// the block need to have the same registry name
 		GameRegistry.register(tutBlock);
 		GameRegistry.register(ibTutBlock, tutBlock.getRegistryName());
 	}

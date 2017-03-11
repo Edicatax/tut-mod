@@ -5,6 +5,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class CreativeTabHandler {
+	// This class is pretty much just a container for all of our creative tabs.
+	// This adds a tab named "tut_blocks" with the inventory texture of 
+	// BlockHandler.tutBlock as the tab symbol.
 	public static CreativeTabs tabBlocks = new CreativeTabs("tut_blocks"){
 		public ItemStack getTabIconItem(){
 			return new ItemStack(Item.getItemFromBlock(BlockHandler.tutBlock));
@@ -28,8 +31,4 @@ public class CreativeTabHandler {
 			return new ItemStack(ItemHandler.tutSword);
 		}
 	};
-	
-	public static void init(){
-		
-	}
 }
