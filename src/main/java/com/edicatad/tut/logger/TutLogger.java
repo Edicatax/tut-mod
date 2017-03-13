@@ -7,7 +7,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 
-import net.minecraftforge.fml.common.TracingPrintStream;
 import net.minecraftforge.fml.relauncher.Side;
 
 public class TutLogger {
@@ -23,7 +22,7 @@ public class TutLogger {
     	
     }
     /**
-     * Configure the logger and inject tracing printstreams.
+     * Configure the logger
      */
     private static void configureLogging()
     {
@@ -32,10 +31,6 @@ public class TutLogger {
         if (side == null) side = Side.CLIENT;
         ThreadContext.put("side", side.name().toLowerCase(Locale.ENGLISH));
         configured = true;
-        
-        //TutLogger.fine("Injecting tracing printstreams for STDOUT/STDERR.");
-        //System.setOut(new TracingPrintStream(LogManager.getLogger("STDOUT"), System.out));
-        //System.setErr(new TracingPrintStream(LogManager.getLogger("STDERR"), System.err));
     }
 
     public static void log(String targetLog, Level level, String format, Object... data)    {

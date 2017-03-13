@@ -3,7 +3,6 @@ package com.edicatad.tut.world;
 import java.util.Random;
 
 import com.edicatad.tut.handlers.BlockHandler;
-import com.edicatad.tut.logger.TutLogger;
 import com.google.common.base.Predicate;
 
 import net.minecraft.block.state.IBlockState;
